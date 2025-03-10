@@ -1,0 +1,130 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: honeydew;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: grid;
+    place-items: center;
+    background-color: black;
+    padding: 10px;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-right: 2px solid white;
+}
+
+nav ul li:last-child .nav-link {
+    border-right: none;
+}
+
+.nav-link:hover {
+    background-color: grey;
+}
+
+.nav-link.active {
+    background-color: limegreen;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+}
+
+.bio-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bio-image {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+    .bio-image:hover {
+        transition: transform 0.3s ease;
+        transform: scaleX(-1);
+    }
+
+.bio-text {
+    flex: 1;
+}
+
+.hobbies-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hobby-image {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+    .hobby-image:hover {
+        transition: transform 0.3s ease;
+        transform: scaleX(-1);
+    }
+
+.hobbies-text {
+    flex: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: gray;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .bio-section,
+    .hobbies-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio-image,
+    .hobby-image {
+        width: 100%;
+        height: auto;
+    }
+}
