@@ -6,10 +6,13 @@
     <title>Dwayne Johnson</title>
     <link href="/Content/NewStyle.css" rel="stylesheet" />
     <script defer src="/Content/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
-<body>
-    <h1>Person 5 - Dwayne Johnson</h1>
-    <nav>
+<body class="b-nbs">
+
+    <h1 class="h-nbs">Person 5 - Dwayne Johnson</h1>
+    <nav class="custom">
         <ul>
             <li><a href="/Home/Index" class="nav-link">Home</a></li>
             <li><a href="/People/ListPeople" class="nav-link">All Students</a></li>
@@ -23,57 +26,65 @@
     </nav>
 
     <div class="container">
-        <section class="bio-section">
-            <img src="Images/Project Rock.png" alt="GTR" class="bio-image">
-            <div class="bio-text">
-                <h2>Biography Background</h2>
-                <p>
-                    Dwayne Johnson was born in Hayward and went to school at Freedom High School. He studies BIT (IS) with business beacause
-                    it empowers individuals to leverage technology in solving complex business challenges, enhancing efficiency, and driving digital
-                    transformation in organizations."
-                </p>
+        <div class="row">
+            <div class="col-4">
+                <section class="dj-bio-section">
+                    <img src="Images/Project Rock.png" alt="GTR" class="dj-bio-image">
+                    <div class="dj-bio-text">
+                        <h2>Biography Background</h2>
+                        <p>
+                            Dwayne Johnson was born in Hayward and went to school at Freedom High School. He studies BIT (IS) with business beacause
+                            it empowers individuals to leverage technology in solving complex business challenges, enhancing efficiency, and driving digital
+                            transformation in organizations.
+                        </p>
+                    </div>
+                </section>
             </div>
-        </section>
 
-        <section class="hobbies-section">
-            <div class="hobbies-text">
-                <h2>Hobbies</h2>
-                <p>
-                    Dwayne's hobbies: Gym, Watching Movies, Fishing
-                </p>
+            <div class="col-4">
+                <section class="dj-hobbies-section">
+                    <div class="dj-hobbies-text">
+                        <h2>Hobbies</h2>
+                        <p>
+                            Dwayne's hobbies: Gym, Watching Movies, Fishing
+                        </p>
+                    </div>
+                    <img src="Images/Bass Pro.jpg" alt="GTR" class="dj-hobby-image">
+                </section>
             </div>
-            <img src="Images/Bass Pro.jpg" alt="GTR" class="hobby-image">
-        </section>
 
-        <section class="modules-section">
-            <h2>Modules</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Modules Semester 1</th>
-                        <th>Modules Semester 2</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>INF 214</td>
-                        <td>INF 261</td>
-                    </tr>
-                    <tr>
-                        <td>OBS 214</td>
-                        <td>INF 225</td>
-                    </tr>
-                    <tr>
-                        <td>OBS 211</td>
-                        <td>OBS 212</td>
-                    </tr>
-                    <tr>
-                        <td>FIL 251</td>
-                        <td>KOB 283</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <div class="col-4">
+                <section class="modules-section">
+                    <h2>Modules</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Modules Semester 1</th>
+                                <th>Modules Semester 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>INF 214</td>
+                                <td>INF 261</td>
+                            </tr>
+                            <tr>
+                                <td>OBS 214</td>
+                                <td>INF 225</td>
+                            </tr>
+                            <tr>
+                                <td>OBS 211</td>
+                                <td>OBS 212</td>
+                            </tr>
+                            <tr>
+                                <td>FIL 251</td>
+                                <td>KOB 283</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
     </div>
 
 </body>
