@@ -283,3 +283,78 @@ th {
     transition: transform 0.3s ease;
     transform: scaleX(-1); /* Optional: flip the image on hover */
 }
+
+.searchBtn {
+    background-color: blue;
+}
+
+.searchBtn:hover {
+    background-color: lightblue;
+}
+
+.saveBtn {
+    background-color: blue;
+}
+
+.saveBtn:hover {
+    background-color: lightblue;
+}
+
+.retrieveBtn {
+    background-color: blue;
+}
+
+.retrieveBtn:hover {
+    background-color: lightblue;
+}
+
+.clearBtn {
+    background-color: blue;
+}
+
+.clearBtn:hover {
+    background-color: lightblue;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    flex: 1; /* Distribute buttons evenly */
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 0; /* optional: removes curve for a clean pill look */
+    border-right: none; /* avoid double borders between buttons */
+}
+
+.tab-button.active {
+    background-color: #007bff;
+    color: white;
+ }
+
+.tabs-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-button:last-child {
+    border-right: 1px solid #ccc; /* re-add border to last button */
+}

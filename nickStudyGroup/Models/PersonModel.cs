@@ -20,7 +20,7 @@ namespace nickStudyGroup.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
 
-        [Display(Name = "Link to personal page")]
-        public string myLink { get; set; }
+        /*[Display(Name = "Link to personal page")]
+        public string myLink { get; set; }*/
     }
 }
